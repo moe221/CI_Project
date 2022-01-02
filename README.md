@@ -1,15 +1,16 @@
-# test_repo_pylinter_v1
+# test_repo_pylinter_v2
 
 ## Description
-Demo repo to accompany YouTube video demonstrating how to use [`pylinter`](https://github.com/marketplace/actions/pylinter) GitHub Action written by myself.
+This repo serves as a reference for the following [YouTube video](https://www.youtube.com/watch?v=rY-igT2N8zU&list=PL0dOL8Z7pG3J6t1pqRQiNarBGY-ZnIJcq&index=2).
 
-The YouTube video can be found [here](https://www.youtube.com/watch?v=oi94qEvi9Qo&list=PL0dOL8Z7pG3J6t1pqRQiNarBGY-ZnIJcq).
+Demonstration of how to incorporate continuous integration (CI) into a Python project using:
+
+1. linting
+2. testing
+
+The linting is handled by a custom GitHub Action [`pylinter`](https://github.com/marketplace/actions/pylinter) written by myself. The testing is handled by pytest.
 
 ## Contents
-* `main.py`
-	* only `.py` file
-	* contains obvious `mypy`, `flake8`, and `isort` errors
-* `.github/workflows/main.py`
-	* GitHub workflow file that uses the GitHub action [`pylinter`](https://github.com/marketplace/actions/pylinter)
-	* can be used as is, or can be customized with the various flags for [`pylinter`](https://github.com/marketplace/actions/pylinter)
-	* can also add/remove the last two code sections that will automatically commit and push the code changes made by `isort` (more documentation is on the [`pylinter`](https://github.com/marketplace/actions/pylinter) page)
+* `.py` simplistic files to lint with the GitHub Action `pylinter` and test with `pytest`
+* `tests/` directory which contains the various `pytest` tests to run
+* `requirements.txt` which contains the necessary packages to run the CI
