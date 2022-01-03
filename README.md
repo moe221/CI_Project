@@ -1,16 +1,9 @@
-# test_repo_pylinter_v2
+# pytester_test_repo
 
 ## Description
-This repo serves as a reference for the following [YouTube video](https://www.youtube.com/watch?v=rY-igT2N8zU&list=PL0dOL8Z7pG3J6t1pqRQiNarBGY-ZnIJcq&index=2).
+This repo serves as a reference for the YouTube video found [here](https://www.youtube.com/watch?v=OOZtW3iF0is&list=PL0dOL8Z7pG3J6t1pqRQiNarBGY-ZnIJcq&index=3).
 
-Demonstration of how to incorporate continuous integration (CI) into a Python project using:
+Demonstration of how to incorporate pytest code coverage into a Python project.
 
-1. linting
-2. testing
 
-The linting is handled by a custom GitHub Action [`pylinter`](https://github.com/marketplace/actions/pylinter) written by myself. The testing is handled by pytest.
-
-## Contents
-* `.py` simplistic files to lint with the GitHub Action `pylinter` and test with `pytest`
-* `tests/` directory which contains the various `pytest` tests to run
-* `requirements.txt` which contains the necessary packages to run the CI
+The code coverage checking is handled by a custom GitHub Action [`pytester-cov`](https://github.com/marketplace/actions/pytester-cov) written by myself.
